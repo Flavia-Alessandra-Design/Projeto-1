@@ -60,14 +60,15 @@
         const botao = document.querySelectorAll("button");
 
     botoes.forEach(function (botao)  {
-        ;
+        let curtiu = false;
         botao.addEventListener("click", botaoClicado);
-
         function botaoclicado(){
             console.log("fui clicado");
             let texto = botao.querySelector("span");
+            if (curtiu === false){
             texto.textContent++; 
-
+            curtiu = true:
+            }
         }
     })
     </script>
